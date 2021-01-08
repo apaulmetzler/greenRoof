@@ -5,7 +5,7 @@
 #### Paul Metzler
 #### Chaudary Lab
 --------------
-Note: The Chaudhary Lab has a document called 'QIIME2 for absolute beginers', that you may want to check out. .qzv files can be visualized on the qiime2 [visualizer](https://view.qiime2.org/), other tutorials and helpful information can be found on the QIIME2 [website](https://qiime2.org/).
+Note: The Chaudhary Lab has a document called 'QIIME2 for absolute beginers', that you may want to check out. .qzv files can be visualized on the qiime2 [visualizer](https://view.qiime2.org/), other tutorials and helpful information, including how to download qiime2, can be found on the QIIME2 [website](https://qiime2.org/).
 
 ## Demultiplex summary
 
