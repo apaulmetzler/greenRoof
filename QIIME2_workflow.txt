@@ -5,9 +5,10 @@
 # Paul Metzler
 # Chaudary Lab
 --------------
-## *Note: there are google docs that accompany
-##  and explain this code
-
+## *Note: there are google docs that help explain how qiime works
+##
+#====Activate====
+conda activate qiime2-2020.2
 
 #====== demultiplex summary ========
 

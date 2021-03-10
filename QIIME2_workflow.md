@@ -7,6 +7,11 @@
 --------------
 Note: The Chaudhary Lab has a document called 'QIIME2 for absolute beginers', that you may want to check out. .qzv files can be visualized on the qiime2 [visualizer](https://view.qiime2.org/), other tutorials and helpful information can be found on the QIIME2 [website](https://qiime2.org/).
 
+# to get things started, open a terminal at your working directory, then type:
+
+>conda activate qiime2-2020.2
+
+
 ## Demultiplex summary
 
 >qiime demux summarize \
@@ -89,33 +94,6 @@ filter-samples method. there's probably a better way
 >qiime metadata tabulate \
   --m-input-file denoising-statsGR.qza \
   --o-visualization statsGR.qzv
-
-## OR
-
->qiime dada2 denoise-paired \
- --i-demultiplexed-seqs demux-GR.qza \
- --p-trunc-len-f 0 \
- --p-trunc-len-r 0 \
- --p-max-ee-f 2 \
- --p-max-ee-r 2 \
- --p-trunc-q 2 \
- --o-table tableGREE2.qza \
- --o-representative-sequences rep-seqsGREE2.qza \
- --o-denoising-stats denoising-statsGREE2.qza
-
->qiime feature-table summarize \
-  --i-table tableGREE2.qza \
-  --o-visualization tableGREE2.qzv \
-  --m-sample-metadata-file sample-meta-GR.tsv
-
->qiime feature-table tabulate-seqs \
-  --i-data rep-seqsGREE2.qza \
-  --o-visualization rep-seqsGREE2.qzv
-
->qiime metadata tabulate \
-  --m-input-file denoising-statsGREE2.qza \
-  --o-visualization statsGREE2.qzv
-
 
 # Creating an OTU table
 
